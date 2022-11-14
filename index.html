@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task #3</title>
+    </head>
+<body>
+<form method="post">
+<fieldset>
+    <legend> Personal Information </legend>
+<p>
+    <label for="first-name"> First Name*: </label>
+    <input type="text" id="first-name" name="first-name" placeholder="Your first name" required/>
+    </p>
+<p>
+<label for="last-name"> Last Name*: </label>
+    <input type="text" id="last-name" name="last-name" placeholder="Your last name" required/>
+    </p>
+<p>
+<label for="email"> Email Address*: </label>
+    <input type="email" id="email" name="email" placeholder="Your email address" required/>
+    </p>
+<p>
+<label for="password"> Password input*: </label>
+    <input type="password" id="password" name= "password" required/>
+    </p>
+<p>
+<label for="confirm-password"> Repeat password*: </label>
+    <input type="password" id="confirm-password" name = "password" required/>
+    </p>
+    </fieldset>
+
+    <fieldset>
+    <legend> Profile Information </legend>
+<p> Grade Level
+    <input required type="radio" name="grade" value="freshman"/> Freshman
+    <input type="radio" name="grade" value="sophomore"/> Sophomore
+    <input type="radio" name="grade" value="junior"/> Junior
+    <input type="radio" name="grade" value="senior"/> Senior
+    </p>
+<p> 
+    <label for="music-genre">
+    Favorite Genre of Music (You can select multiple hold command/control + shift and click) *:</label>
+<select required id="music-genre" name="music-genre" size="4" multiple="multiple">
+<option value="rock">rock</option>
+<option value="hip hop">hip hop</option>
+<option value="EDM">EDM</option>
+<option value="classical">classical</option>
+</select>
+</p>
+<p> 
+<label for="fav-member"> Favorite member of Wu Tang Clan*:</label> 
+<select required name="fav-member" id="fav-member">
+<option value="" selected="selected">-- Select --</option>
+<option value="rza">RzA</option>
+<option value="gza">GzA</option>
+<option value="ol' dirty">Ol' Dirty</option>
+<option value="inspectah deck">Inspectah Deck</option>
+<option value="raekwon">Raekwon</option>
+<option value="u-god">U-God</option>
+<option value="ghostface killah">Ghostface Killah</option>
+<option value="method man">Method Man</option>
+</select>
+</p>
+<p> 
+<input type="checkbox" name="subscribe" value="subscribe"/>
+Sign me up for spam emails, because I don't get enough junk email!
+</p> 
+</fieldset>
+</form>
+<p>* Required
+<input type="submit" value="Submit"/>
+</p>
+</body>
+</html>
